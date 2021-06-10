@@ -48,3 +48,21 @@ class Clock {
 
 clock._tick();
 
+const readline = require("readline");
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+function addNumbers(sum, numsLeft, completionCallback) {
+    if (numsLeft > 0) {
+        rl.question('Pick a number:', answer => {
+            //Convert user input string to integer 
+            //console.log(sum += user input parsed)
+            //AddNumbers(sum, numsLeft - 1, completionCallback)
+        })
+        
+    } else {
+        completionCallback(sum)
+    }
+}
